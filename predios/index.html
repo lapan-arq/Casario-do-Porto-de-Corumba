@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prédios - Casario do Porto</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+<header class="header">
+  <div class="logo">
+    <img src="img/logo/logo.png" alt="Logo do Projeto">
+  </div>
+
+  <nav class="nav">
+    <a href="../">Início</a>
+    <a href="/predios/">Prédios</a>
+    <a href="/mapa/">Mapa</a>
+    <a href="/sobre/">Sobre</a>
+  </nav>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+</header>
+
+
+
+<section class="predios">
+
+  <h1>Explorar Prédios</h1>
+
+  <div class="grid">
+
+    <!-- CARD 1 -->
+    <div class="card" onclick="abrirModal('muphan')">
+      <img src="" alt="">
+      <h3>MUPHAN</h3>
+      <p>1876 • Museu</p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card" onclick="abrirModal('alfandega')">
+      <img src="" alt="">
+      <h3>Alfândega</h3>
+      <p>1896 • Histórico</p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card" onclick="abrirModal('cavassa')">
+      <img src="" alt="">
+      <h3>Casa Cavassa</h3>
+      <p>1858 • Residencial</p>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card" onclick="abrirModal('351')">
+      <img src="" alt="">
+      <h3>Rua 351</h3>
+      <p>1900 • Comercial</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+
+  <div class="modal-content">
+
+    <span class="fechar" onclick="fecharModal()">×</span>
+
+    <h2 id="titulo"></h2>
+
+    <!-- IMAGEM -->
+    <img id="imagem" src="" alt="">
+
+    <p id="texto"></p>
+
+    <span class="fonte">FONTE: IPHAN, 2026</span>
+
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+
+const dados = {
+
+  muphan: {
+    titulo: "Museu de História do Pantanal",
+    imagem: "",
+    texto: `Construído em 1876, o edifício foi sede da firma Wanderley, Baís & Cia.,
+    uma das mais importantes casas comerciais de Corumbá, responsável pela importação
+    de produtos europeus e exportação de mercadorias regionais como couro, gado e poaia.
+
+    Sua arquitetura eclética, com volumetria imponente e elementos ornamentais,
+    expressa o auge do comércio fluvial internacional no final do século XIX.
+
+    Atualmente, abriga o Museu de História do Pantanal, reunindo acervo arqueológico
+    que evidencia a ocupação humana milenar da região.`
+  },
+
+  alfandega: {
+    titulo: "Antigo Prédio da Alfândega",
+    imagem: "",
+    texto: `Construído em 1896, com projeto do arquiteto Martino Santa Lucci,
+    o prédio da Alfândega desempenhou papel central no controle fiscal e na
+    arrecadação de impostos sobre mercadorias.
+
+    Sua arquitetura apresenta influências do ecletismo e do neoclassicismo europeu,
+    reforçando a imagem de Corumbá como cidade moderna e integrada ao comércio internacional.
+
+    Atualmente, o edifício abriga o Escritório Técnico do IPHAN, simbolizando
+    a preservação do patrimônio histórico.`
+  },
+
+  cavassa: {
+    titulo: "Casa de Manoel Cavassa",
+    imagem: "",
+    texto: `Construída originalmente em 1858 e reconstruída em 1870,
+    a casa pertenceu a Manoel Cavassa, pioneiro do comércio fluvial em Corumbá.
+
+    O imóvel foi destruído durante a Guerra do Paraguai e posteriormente reconstruído,
+    tornando-se símbolo da recuperação econômica e urbana da cidade.
+
+    Representa um importante marco da ocupação anterior ao conflito e da memória histórica local.`
+  },
+
+  351: {
+    titulo: "Rua Manoel Cavassa, nº 351",
+    imagem: "",
+    texto: `Construído no início do século XX, o imóvel está associado à fase
+    de modernização urbana do porto, quando Corumbá já estava integrada às rotas comerciais da Bacia do Prata.
+
+    O edifício possui tipologia funcional, com fachada simples e alinhada à rua,
+    evidenciando a prioridade à atividade econômica.
+
+    Sua função estava ligada a atividades comerciais e serviços de apoio à navegação fluvial.`
+  }
+
+};
+
+function abrirModal(id) {
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("titulo").innerText = dados[id].titulo;
+  document.getElementById("texto").innerText = dados[id].texto;
+  document.getElementById("imagem").src = dados[id].imagem;
+}
+
+function fecharModal() {
+  document.getElementById("modal").style.display = "none";
+}
+// FECHAR CLICANDO FORA
+window.onclick = function(event) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+    fecharModal();
+  }
+};
+
+// FECHAR COM ESC
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") {
+    fecharModal();
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casario do Porto de Corumbá</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="header">
+  <div class="logo">
+    <img src="img/logo/logo.png" alt="Logo do Projeto">
+  </div>
+
+  <nav class="nav">
+    <a href="/">Início</a>
+    <a href="/predios/">Prédios</a>
+    <a href="/mapa/">Mapa</a>
+    <a href="/sobre/">Sobre</a>
+  </nav>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Casario do Porto de Corumbá</h1>
+    <p>
+      Um dos mais importantes conjuntos históricos do Centro-Oeste brasileiro,
+      marcado pela arquitetura, pelo comércio fluvial e pela memória urbana.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="/predios/" class="btn-primary">Explorar Prédios</a>
+      <a href="/mapa/" class="btn-secondary">Ver no mapa</a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRODUÇÃO -->
+<section class="intro">
+
+  <div class="container">
+
+    <div class="intro-text">
+      <h2>O Casario do Porto</h2>
+
+      <p>
+        Localizado às margens do rio Paraguai, o Casario do Porto Geral de Corumbá
+        constitui um expressivo conjunto arquitetônico formado entre a segunda metade
+        do século XIX e o início do século XX, período de intensa atividade econômica
+        na região.
+      </p>
+
+      <p>
+        As edificações estão diretamente relacionadas ao desenvolvimento do comércio
+        fluvial internacional, quando Corumbá se consolidou como um dos principais
+        entrepostos comerciais da Bacia do Prata, articulando a circulação de mercadorias
+        entre o interior do continente e mercados externos.
+      </p>
+
+      <span class="fonte">FONTE: IPHAN, 2026</span>
+    </div>
+
+    <div class="intro-image">
+      <img src="img/predios/image.png" alt="Casario do Porto">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- HISTÓRIA -->
+<section class="patrimonio">
+
+  <div class="container reverse">
+
+    <div class="intro-image">
+      <img src="img/predios/image1.png" alt="Imagem histórica">
+    </div>
+
+    <div class="intro-text">
+      <h2>História e Desenvolvimento</h2>
+
+      <p>
+        O conjunto urbano reflete o auge econômico vivido por Corumbá no final do século XIX,
+        impulsionado pela navegação fluvial e pelas relações comerciais internacionais.
+        Nesse período, empresas comerciais importavam produtos europeus e exportavam
+        mercadorias regionais, como couro, gado e ervas medicinais.
+      </p>
+
+      <p>
+        A Guerra do Paraguai marcou profundamente a cidade, resultando na destruição de
+        parte das edificações. A posterior reconstrução do casario evidencia a retomada
+        econômica e a permanência da atividade comercial na região.
+      </p>
+
+      <span class="fonte">FONTE: IPHAN, 2026</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ARQUITETURA -->
+<section class="arquitetura">
+
+  <div class="container">
+
+    <div class="intro-text">
+      <h2>Arquitetura e Paisagem Urbana</h2>
+
+      <p>
+        As edificações apresentam características da arquitetura eclética, com influências
+        europeias adaptadas às condições locais. Elementos como platibandas, vãos verticais,
+        ferragens ornamentadas e fachadas alinhadas ao passeio público compõem a identidade
+        visual do conjunto.
+      </p>
+
+      <p>
+        A diversidade tipológica dos imóveis revela a coexistência de funções comerciais,
+        residenciais e logísticas, fundamentais para o funcionamento do porto e para a
+        dinâmica urbana da época.
+      </p>
+
+      <span class="fonte">FONTE: IPHAN, 2026</span>
+    </div>
+
+    <div class="intro-image">
+      <img src="img/predios/image2.png" alt="Arquitetura do casario">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALERIA -->
+<section class="galeria">
+
+  <h2>Galeria</h2>
+
+  <div class="galeria-grid">
+    <div class="galeria-item"><img src="img/predios/image.png" alt=""></div>
+    <div class="galeria-item"><img src="img/predios/image1.png" alt=""></div>
+    <div class="galeria-item"><img src="img/predios/image2.png" alt=""></div>
+    <div class="galeria-item"><img src="img/predios/image.png" alt=""></div>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+  <h2>Explore o Patrimônio</h2>
+  <p>
+    Descubra a história de cada edifício do Casario do Porto e sua importância
+    para a formação da cidade de Corumbá.
+  </p>
+
+  <a href="#" class="btn-primary">Explorar agora</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Projeto acadêmico • Casario do Porto de Corumbá</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.querySelector(".nav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
