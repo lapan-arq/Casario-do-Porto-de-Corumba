@@ -108,7 +108,14 @@ body {
   margin-bottom: 25px;
 }
 
-/* BOTÕES */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* 🔥 ESSENCIAL */
+}
+
+
 .btn-primary {
   background: var(--amarelo);
   color: black;
@@ -118,6 +125,7 @@ body {
   margin: 5px;
   display: inline-block;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 
 .btn-primary:hover {
@@ -133,12 +141,33 @@ body {
   text-decoration: none;
   margin: 5px;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 
 .btn-secondary:hover {
   background: white;
   color: black;
+
 }
+
+@media (max-width: 768px) {
+
+  .hero-buttons {
+    flex-direction: column; /* 🔥 empilha */
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 90%; /* 🔥 ocupa quase toda a tela */
+    max-width: 300px;
+    text-align: center;
+  }
+
+}
+
+/* BOTÕES */
+
 
 /* SEÇÕES */
 section {
