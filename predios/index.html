@@ -155,7 +155,11 @@ const dados = {
 };
 
 function abrirModal(id) {
-  document.getElementById("modal").style.display = "flex";
+  const modal = document.getElementById("modal");
+
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+
   document.getElementById("titulo").innerText = dados[id].titulo;
   document.getElementById("texto").innerText = dados[id].texto;
   document.getElementById("imagem").src = dados[id].imagem;
@@ -163,7 +167,9 @@ function abrirModal(id) {
 
 function fecharModal() {
   document.getElementById("modal").style.display = "none";
+  document.body.style.overflow = "auto";
 }
+
 // FECHAR CLICANDO FORA
 window.onclick = function(event) {
   const modal = document.getElementById("modal");

@@ -395,7 +395,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  z-index: 9999; /* 🔥 AQUI É A CORREÇÃO */
+  z-index: 9999; 
+  overflow-y: auto; /*  permite rolar */
 }
 
 /* CONTEÚDO DO MODAL */
@@ -407,14 +408,22 @@ body {
   padding: 25px;
   animation: aparecer 0.4s ease;
   position: relative;
+  max-height: 90vh; /*  não passa da tela */
+  overflow-y: auto;
 }
 
 /* BOTÃO FECHAR */
+
 .fechar {
-  position: absolute;
+  position: sticky;
   top: 10px;
   right: 15px;
   font-size: 25px;
+  display: block;
+  text-align: right;
+  font-size: 28px;
+  padding-bottom: 10px;
+  z-index: 10;
   cursor: pointer;
 }
 
@@ -459,6 +468,18 @@ body {
 /* RESPONSIVO */
 @media (max-width: 768px) {
 
+  .modal {
+    align-items: flex-start; /* começa do topo */
+    padding: 10px;
+  }
+
+  .modal-content {
+    margin-top: 60px; /* 🔥 espaço do header */
+    width: 100%;
+    max-height: 85vh;
+    padding: 20px;
+  }
+
   .grid {
     padding: 20px;
   }
@@ -492,9 +513,24 @@ body {
 .mapa-box {
   max-width: 1000px;
   margin: 0 auto;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+
+  .mapa-container {
+    flex-direction: column;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .sobre {
+    text-align: center;
+  }
 }
 
 /*--SOBRE--*/
