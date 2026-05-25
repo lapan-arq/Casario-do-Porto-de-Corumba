@@ -1,0 +1,308 @@
+/* ==================================================
+   RESET
+================================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ==================================================
+   VARIÁVEIS
+================================================== */
+
+:root {
+
+    /* CORES PRINCIPAIS */
+
+    --color-primary: #1F3473;
+    --color-secondary: #0088B7;
+
+    /* APOIO */
+
+    --color-green: #009739;
+    --color-yellow: #FFCC00;
+
+    /* NEUTROS */
+
+    --color-white: #FFFFFF;
+
+    --color-gray-100: #F8FAFC;
+    --color-gray-200: #EEF2F7;
+    --color-gray-300: #DCE3EC;
+
+    --color-text: #1E293B;
+    --color-text-light: #64748B;
+
+    /* SOMBRAS */
+
+    --shadow-sm:
+        0 4px 12px rgba(0,0,0,0.06);
+
+    --shadow-md:
+        0 8px 24px rgba(0,0,0,0.08);
+
+    --shadow-lg:
+        0 15px 35px rgba(0,0,0,0.12);
+
+    /* BORDAS */
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+
+    /* TRANSIÇÃO */
+
+    --transition:
+        all .3s ease;
+
+}
+
+/* ==================================================
+   BODY
+================================================== */
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    background: var(--color-white);
+
+    color: var(--color-text);
+
+    line-height: 1.8;
+
+    overflow-x: hidden;
+
+}
+
+/* ==================================================
+   TIPOGRAFIA
+================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    color: var(--color-primary);
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+}
+
+h1 {
+
+    font-size: clamp(
+        2.5rem,
+        5vw,
+        4.5rem
+    );
+
+}
+
+h2 {
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3rem
+    );
+
+    margin-bottom: 1rem;
+
+}
+
+h3 {
+
+    font-size: 1.25rem;
+
+}
+
+p {
+
+    color: var(--color-text-light);
+
+    margin-bottom: 1rem;
+
+}
+
+.fonte {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    font-size: .85rem;
+
+    color: var(--color-text-light);
+
+}
+
+/* ==================================================
+   CONTAINER
+================================================== */
+
+.container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding-left: 24px;
+
+    padding-right: 24px;
+
+}
+
+/* ==================================================
+   BOTÕES
+================================================== */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 28px;
+
+    border-radius: 999px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.btn-primary {
+
+    background: var(--color-primary);
+
+    color: white;
+
+}
+
+.btn-primary:hover {
+
+    background: var(--color-secondary);
+
+    transform: translateY(-2px);
+
+}
+
+.btn-outline {
+
+    border: 2px solid var(--color-primary);
+
+    color: var(--color-primary);
+
+}
+
+.btn-outline:hover {
+
+    background: var(--color-primary);
+
+    color: white;
+
+}
+
+/* ==================================================
+   TAGS
+================================================== */
+
+.hero-tag,
+.section-tag {
+
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    background: rgba(0,136,183,.10);
+
+    color: var(--color-secondary);
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+/* ==================================================
+   UTILITÁRIOS
+================================================== */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.section-title span {
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: var(--color-secondary);
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+.text-center {
+
+    text-align: center;
+
+}

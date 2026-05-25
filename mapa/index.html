@@ -1,82 +1,177 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mapa - Casario do Porto de Corumbá</title>
+<html lang="pt-BR">
 
-  <link rel="stylesheet" href="../css/style.css">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Antiga Alfândega
+  </title>
+  <link rel="icon" type="image/png" href="../../img/logo/lapan.png">
+
+
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/mapa.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="header">
-  <div class="logo">
-    <img src="../img/logo/logo.png" alt="Logo do Projeto">
-  </div>
+  <!-- HEADER -->
 
-  <nav class="nav">
-    <a href="../">Início</a>
-    <a href="../predios/">Prédios</a>
-    <a href="../mapa/">Mapa</a>
-    <a href="../sobre/">Sobre</a>
-  </nav>
-    <div class="menu-toggle" id="menu-toggle">
-      ☰
+  <header class="header">
+
+    <div class="header-container">
+
+      <div class="logos">
+
+        <img class="logo-main" src="../../img/logo/lapan.png" alt="Logo">
+
+        <img class="logo-secondary" src="../../img/logo/iphan.png" alt="Logo">
+
+        <img class="logo-secondary" src="../../img/logo/prefeitura_corumba.png" alt="Logo">
+
+      </div>
+
+      <nav class="nav" id="nav">
+
+        <a href="../../">Início</a>
+        <a href="../">Prédios</a>
+        <a href="../../mapa/">Mapa</a>
+        <a href="../../sobre/">Sobre</a>
+
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle">
+
+        ☰
+
+      </button>
+
     </div>
-</header>
+
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="mapa-hero">
+
+      <div class="container">
+
+        <span class="section-tag">
+
+          Navegação Patrimonial
+
+        </span>
+
+        <h1>
+
+          Mapa Interativo do Casario
+
+        </h1>
+
+        <p>
+
+          Localize os edifícios históricos do
+          Porto Geral de Corumbá e acesse
+          informações detalhadas sobre cada um deles.
+
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- MAPA -->
+
+    <section class="mapa-section">
+
+      <div class="container">
+
+        <div class="mapa-wrapper">
+
+          <iframe src="https://www.google.com/maps/d/embed?mid=1Z-b7o-CLaM33YmfGFA8TDDoyJF1vOy0&ehbc=2E312F"
+            loading="lazy" allowfullscreen>
+          </iframe>
+
+        </div>
+
+      </div>
+    <div class="mapa-acoes">
+
+      <a href="https://www.google.com/maps/d/viewer?mid=1Z-b7o-CLaM33YmfGFA8TDDoyJF1vOy0" target="_blank"
+        rel="noopener noreferrer" class="btn-mapa">
+
+        📍 Abrir mapa completo no Google Maps
+
+      </a>
+
+    </div>
+    
+    </section>
 
 
-<!-- CONTEÚDO -->
-<main class="mapa-container" >
+    <!-- ACESSO RÁPIDO -->
 
-  <h1>Mapa Turístico</h1>
+    <section class="mapa-links">
 
-  <p>
-    Os prédios históricos do Casario do Porto estão localizados na 
-    Rua Manoel Cavassa, em Corumbá (MS), uma região marcada pela 
-    história do comércio fluvial e pela riqueza cultural do Pantanal.
-  </p>
+      <div class="container">
 
-  <div class="mapa-box">
-    <iframe 
-      src="https://www.google.com/maps/d/embed?mid=1Z-b7o-CLaM33YmfGFA8TDDoyJF1vOy0&ehbc=2E312F" 
-      width="100%" 
-      height="450" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
+        <h2>
 
-</main>
+          Acesso Rápido
 
+        </h2>
 
- <section class="cta">
+        <div class="predios-links">
 
-  <h2>Explore o Patrimônio</h2>
-  <p>
-    Descubra a história de cada edifício do Casario do Porto e sua importância
-    para a formação da cidade de Corumbá.
-  </p>
+          <a href="../predios/muphan/" class="predio-link">
+            Museu de História do Pantanal
+          </a>
 
-  <a href="#" class="btn-primary">Explorar agora</a>
+          <a href="../predios/alfandega/" class="predio-link">
+            Antiga Alfândega
+          </a>
 
-</section>
+          <a href="../predios/casa-cavassa/" class="predio-link">
+            Casa Cavassa
+          </a>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>Projeto acadêmico • Casario do Porto de Corumbá</p>
-</footer>
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.querySelector(".nav");
+          <a href="../predios/rua-351/" class="predio-link">
+            Rua Manoel Cavassa nº 351
+          </a>
 
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-</script>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <p>
+
+        Projeto acadêmico • Casario do Porto de Corumbá
+
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script src="../../js/menu.js"></script>
 
 </body>
+
 </html>

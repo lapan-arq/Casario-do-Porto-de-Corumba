@@ -1,0 +1,363 @@
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+
+    padding: 80px 0 100px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fafc 100%
+        );
+
+}
+
+.hero-container {
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 0 24px;
+
+    display: grid;
+
+    grid-template-columns: 1.1fr .9fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+.hero-content h1 {
+
+    margin-bottom: 24px;
+
+    max-width: 700px;
+
+}
+
+.hero-content p {
+
+    font-size: 1.15rem;
+
+    max-width: 600px;
+
+    margin-bottom: 35px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+}
+
+.hero-image {
+
+    position: relative;
+
+}
+
+.hero-image img {
+
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    border-radius: 28px;
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+/* detalhe decorativo */
+
+.hero-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    background: rgba(0,136,183,.12);
+
+    border-radius: 50%;
+
+    top: -25px;
+
+    right: -25px;
+
+    z-index: -1;
+
+}
+
+.hero-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    background: rgba(31,52,115,.08);
+
+    border-radius: 50%;
+
+    bottom: -20px;
+
+    left: -20px;
+
+    z-index: -1;
+
+}
+
+/* ==================================================
+   HIGHLIGHTS
+================================================== */
+
+.highlights {
+
+    margin-top: -40px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.highlights .container {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+
+}
+
+.highlight-card {
+
+    background: white;
+
+    border-radius: var(--radius-md);
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+    border-top: 4px solid var(--color-secondary);
+
+}
+
+.highlight-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.highlight-card h3 {
+
+    font-size: 1.8rem;
+
+    margin-bottom: 8px;
+
+}
+
+.highlight-card p {
+
+    margin: 0;
+
+}
+
+/* ==================================================
+   SEÇÕES DE CONTEÚDO
+================================================== */
+
+.section-text {
+
+    max-width: 600px;
+
+}
+
+.section-text p {
+
+    text-align: justify;
+
+}
+
+.section-image img {
+
+    transition: .4s ease;
+
+}
+
+.section-image:hover img {
+
+    transform: scale(1.02);
+
+}
+
+/* ==================================================
+   GALERIA
+================================================== */
+
+.gallery {
+
+    padding: 120px 0;
+
+    background: var(--color-gray-100);
+
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(260px,1fr)
+        );
+
+    gap: 20px;
+
+}
+
+.gallery-grid img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: .35s ease;
+
+}
+
+.gallery-grid img:hover {
+
+    transform: scale(1.03);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+/* ==================================================
+   CTA
+================================================== */
+
+.cta {
+
+    padding: 120px 0;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--color-primary),
+            #2848a0
+        );
+
+    color: white;
+
+}
+
+.cta h2 {
+
+    color: white;
+
+    max-width: 700px;
+
+    margin: 0 auto 20px;
+
+}
+
+.cta p {
+
+    color: rgba(255,255,255,.85);
+
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+}
+
+.cta .btn-primary {
+
+    background: white;
+
+    color: var(--color-primary);
+
+}
+
+.cta .btn-primary:hover {
+
+    background: var(--color-yellow);
+
+    color: var(--color-primary);
+
+}
+
+/* ==================================================
+   BLOCOS DECORATIVOS
+================================================== */
+
+.section {
+
+    position: relative;
+
+}
+
+.section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 70px;
+
+    height: 70px;
+
+    background: rgba(0,136,183,.05);
+
+    border-radius: 50%;
+
+    top: 80px;
+
+    right: 10%;
+
+}
+
+.section-alt::before {
+
+    background: rgba(31,52,115,.05);
+
+}

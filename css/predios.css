@@ -1,0 +1,164 @@
+/* ==================================================
+   HERO
+================================================== */
+
+.predios-hero {
+
+    padding: 100px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--color-primary),
+            var(--color-secondary)
+        );
+
+    color: white;
+
+    text-align: center;
+
+}
+
+.predios-hero h1 {
+
+    color: white;
+
+    margin-bottom: 20px;
+
+}
+
+.predios-hero p {
+
+    color: rgba(255,255,255,.85);
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 1.1rem;
+
+}
+
+.predios-hero .section-tag {
+
+    background: rgba(255,255,255,.15);
+
+    color: white;
+
+}
+
+/* ==================================================
+   LISTA
+================================================== */
+
+.predios-lista {
+
+    padding: 100px 0;
+
+    background: var(--color-gray-100);
+
+}
+
+.predios-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(320px,1fr)
+        );
+
+    gap: 30px;
+
+}
+
+/* ==================================================
+   CARD
+================================================== */
+
+.predio-card {
+
+    display: block;
+
+    background: white;
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: .35s ease;
+
+}
+
+.predio-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.predio-card img {
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    transition: .4s ease;
+
+}
+
+.predio-card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+.predio-info {
+
+    padding: 24px;
+
+}
+
+.predio-info span {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--color-secondary);
+
+    font-weight: 700;
+
+}
+
+.predio-info h3 {
+
+    margin-bottom: 12px;
+
+}
+
+.predio-info p {
+
+    margin: 0;
+
+}
+
+.predio-info::after {
+
+    content: "Ver detalhes →";
+
+    display: block;
+
+    margin-top: 20px;
+
+    color: var(--color-primary);
+
+    font-weight: 600;
+
+}

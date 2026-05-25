@@ -1,207 +1,199 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prédios - Casario do Porto</title>
+<html lang="pt-BR">
 
-<link rel="stylesheet" href="../css/style.css">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Casario do Porto de Corumbá</title>
+    <link rel="icon" type="image/png" href="../img/logo/lapan.png">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/predios.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
 </head>
+
 
 <body>
 
-    <!-- NAVBAR -->
-<header class="header">
-  <div class="logo">
-    <img src="..img/logo/logo.png" alt="Logo do Projeto">
-  </div>
+    <!-- HEADER -->
 
-  <nav class="nav">
-    <a href="../">Início</a>
-    <a href="../predios/">Prédios</a>
-    <a href="../mapa/">Mapa</a>
-    <a href="../sobre/">Sobre</a>
-  </nav>
+    <header class="header">
 
-  <div class="menu-toggle" id="menu-toggle">
-    ☰
-  </div>
-</header>
+        <div class="header-container">
+
+            <div class="logos">
+
+                <img class="logo-main" src="../img/logo/lapan.png" alt="Logo Principal">
+
+                <img class="logo-secondary" src="../img/logo/iphan.png" alt="Logo Projeto">
+
+                <img class="logo-secondary" src="../img/logo/prefeitura_corumba.png" alt="Logo Apoio">
+
+            </div>
+
+            <nav class="nav" id="nav">
+
+                <a href="../">Início</a>
+
+                <a href="./">Prédios</a>
+
+                <a href="../../mapa/">Mapa</a>
+
+                <a href="../../sobre/">Sobre</a>
+
+            </nav>
+            <div class="menu-overlay" id="menu-overlay"></div>
+
+            <button class="menu-toggle" id="menu-toggle">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
 
 
+    <main>
 
-<section class="predios">
+        <section class="predios-hero">
 
-  <h1>Explorar Prédios</h1>
+            <div class="container">
 
-  <div class="grid">
+                <span class="section-tag">
 
-    <!-- CARD 1 -->
-    <div class="card" onclick="abrirModal('muphan')">
-      <img src="" alt="">
-      <h3>MUPHAN</h3>
-      <p>1876 • Museu</p>
-    </div>
+                    Acervo Histórico
 
-    <!-- CARD 2 -->
-    <div class="card" onclick="abrirModal('alfandega')">
-      <img src="" alt="">
-      <h3>Alfândega</h3>
-      <p>1896 • Histórico</p>
-    </div>
+                </span>
 
-    <!-- CARD 3 -->
-    <div class="card" onclick="abrirModal('cavassa')">
-      <img src="" alt="">
-      <h3>Casa Cavassa</h3>
-      <p>1858 • Residencial</p>
-    </div>
+                <h1>
 
-    <!-- CARD 4 -->
-    <div class="card" onclick="abrirModal('351')">
-      <img src="" alt="">
-      <h3>Rua 351</h3>
-      <p>1900 • Comercial</p>
-    </div>
+                    Prédios Históricos
 
-  </div>
+                </h1>
 
-</section>
+                <p>
 
-<!-- MODAL -->
-<div class="modal" id="modal">
+                    Explore os edifícios que compõem o Casario do Porto
+                    de Corumbá e conheça sua história, arquitetura
+                    e importância para a memória da cidade.
 
-  <div class="modal-content">
+                </p>
 
-    <span class="fechar" onclick="fecharModal()">×</span>
+            </div>
 
-    <h2 id="titulo"></h2>
+        </section>
 
-    <!-- IMAGEM -->
-    <img id="imagem" src="" alt="">
+        <section class="predios-lista">
 
-    <p id="texto"></p>
+            <div class="container">
 
-    <span class="fonte">FONTE: IPHAN, 2026</span>
+                <div class="predios-grid">
 
-  </div>
+                    <a href="muphan/" class="predio-card">
 
-</div>
+                        <img src="../img/predios/image1.png" alt="MUPHAN">
 
-<section class="cta">
+                        <div class="predio-info">
 
-  <h2>Explore o Patrimônio</h2>
-  <p>
-    Descubra a história de cada edifício do Casario do Porto e sua importância
-    para a formação da cidade de Corumbá.
-  </p>
+                            <span>1876</span>
 
-  <a href="#" class="btn-primary">Explorar agora</a>
+                            <h3>
+                                Museu de História do Pantanal
+                            </h3>
 
-</section>
+                            <p>
+                                Antiga sede da firma
+                                Wanderley, Baís & Cia.
+                            </p>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>Projeto acadêmico • Casario do Porto de Corumbá</p>
-</footer>
+                        </div>
 
-<!-- SCRIPT -->
-<script>
+                    </a>
 
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.querySelector(".nav");
+                    <a href="alfandega/" class="predio-card">
 
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
+                        <img src="../img/predios/image2.png" alt="Alfândega">
 
-const dados = {
+                        <div class="predio-info">
 
-  muphan: {
-    titulo: "Museu de História do Pantanal",
-    imagem: "",
-    texto: `Construído em 1876, o edifício foi sede da firma Wanderley, Baís & Cia.,
-    uma das mais importantes casas comerciais de Corumbá, responsável pela importação
-    de produtos europeus e exportação de mercadorias regionais como couro, gado e poaia.
+                            <span>1896</span>
 
-    Sua arquitetura eclética, com volumetria imponente e elementos ornamentais,
-    expressa o auge do comércio fluvial internacional no final do século XIX.
+                            <h3>
+                                Antiga Alfândega
+                            </h3>
 
-    Atualmente, abriga o Museu de História do Pantanal, reunindo acervo arqueológico
-    que evidencia a ocupação humana milenar da região.`
-  },
+                            <p>
+                                Marco da administração
+                                fiscal do porto.
+                            </p>
 
-  alfandega: {
-    titulo: "Antigo Prédio da Alfândega",
-    imagem: "",
-    texto: `Construído em 1896, com projeto do arquiteto Martino Santa Lucci,
-    o prédio da Alfândega desempenhou papel central no controle fiscal e na
-    arrecadação de impostos sobre mercadorias.
+                        </div>
 
-    Sua arquitetura apresenta influências do ecletismo e do neoclassicismo europeu,
-    reforçando a imagem de Corumbá como cidade moderna e integrada ao comércio internacional.
+                    </a>
 
-    Atualmente, o edifício abriga o Escritório Técnico do IPHAN, simbolizando
-    a preservação do patrimônio histórico.`
-  },
+                    <a href="casa-cavassa/" class="predio-card">
 
-  cavassa: {
-    titulo: "Casa de Manoel Cavassa",
-    imagem: "",
-    texto: `Construída originalmente em 1858 e reconstruída em 1870,
-    a casa pertenceu a Manoel Cavassa, pioneiro do comércio fluvial em Corumbá.
+                        <img src="../img/predios/image.png" alt="Casa Cavassa">
 
-    O imóvel foi destruído durante a Guerra do Paraguai e posteriormente reconstruído,
-    tornando-se símbolo da recuperação econômica e urbana da cidade.
+                        <div class="predio-info">
 
-    Representa um importante marco da ocupação anterior ao conflito e da memória histórica local.`
-  },
+                            <span>1858</span>
 
-  351: {
-    titulo: "Rua Manoel Cavassa, nº 351",
-    imagem: "",
-    texto: `Construído no início do século XX, o imóvel está associado à fase
-    de modernização urbana do porto, quando Corumbá já estava integrada às rotas comerciais da Bacia do Prata.
+                            <h3>
+                                Casa Cavassa
+                            </h3>
 
-    O edifício possui tipologia funcional, com fachada simples e alinhada à rua,
-    evidenciando a prioridade à atividade econômica.
+                            <p>
+                                Residência ligada aos
+                                pioneiros do comércio.
+                            </p>
 
-    Sua função estava ligada a atividades comerciais e serviços de apoio à navegação fluvial.`
-  }
+                        </div>
 
-};
+                    </a>
 
-function abrirModal(id) {
-  const modal = document.getElementById("modal");
+                    <a href="rua-351/" class="predio-card">
 
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
+                        <img src="../img/predios/image1.png" alt="Rua 351">
 
-  document.getElementById("titulo").innerText = dados[id].titulo;
-  document.getElementById("texto").innerText = dados[id].texto;
-  document.getElementById("imagem").src = dados[id].imagem;
-}
+                        <div class="predio-info">
 
-function fecharModal() {
-  document.getElementById("modal").style.display = "none";
-  document.body.style.overflow = "auto";
-}
+                            <span>1900</span>
 
-// FECHAR CLICANDO FORA
-window.onclick = function(event) {
-  const modal = document.getElementById("modal");
-  if (event.target === modal) {
-    fecharModal();
-  }
-};
+                            <h3>
+                                Rua Manoel Cavassa 351
+                            </h3>
 
-// FECHAR COM ESC
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") {
-    fecharModal();
-  }
-});
-</script>
+                            <p>
+                                Imóvel associado ao
+                                desenvolvimento portuário.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="../js/menu.js"></script>
 
 </body>
-</html>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>
+            Projeto acadêmico • Casario do Porto de Corumbá
+        </p>
+    </div>
+</footer>
