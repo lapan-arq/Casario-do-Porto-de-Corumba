@@ -1,0 +1,96 @@
+cff-version: 1.2.0
+
+message: >
+  Se você utilizar este projeto em pesquisas, trabalhos acadêmicos,
+  relatórios técnicos ou publicações, por favor cite-o utilizando
+  os metadados abaixo.
+
+title: "Casario do Porto de Corumbá"
+
+type: software
+
+authors:
+
+  - family-names: Cavassa
+    given-names: Jorciana Camila Batista
+
+  - family-names: Valentim
+    given-names: Odair Flores
+
+  - family-names: Arteaga
+    given-names: Lucas Junior
+
+  - family-names: Cavassa Neto
+    given-names: Ernani Estevão
+
+  - family-names: Sobrenome
+    given-names: Ramona
+
+abstract: >
+  Plataforma digital desenvolvida para divulgação,
+  preservação e valorização do patrimônio histórico
+  do Casario do Porto de Corumbá, Mato Grosso do Sul.
+  O projeto integra atividades de ensino, pesquisa
+  e extensão universitária, disponibilizando
+  informações históricas, arqueológicas e culturais
+  sobre os edifícios históricos do Porto Geral por
+  meio de uma interface web responsiva, mapa
+  interativo e integração com QR Codes.
+
+keywords:
+  - patrimônio histórico
+  - patrimônio cultural
+  - educação patrimonial
+  - arqueologia
+  - corumbá
+  - porto geral
+  - ufms
+  - extensão universitária
+  - preservação da memória
+  - história urbana
+  - humanidades digitais
+
+license: MIT
+
+version: "1.0.0"
+
+date-released: 2026-01-01
+
+repository-code: "https://github.com/lapan-arq/Casario-do-Porto-de-Corumba"
+
+url: "https://lapan-arq.github.io/Casario-do-Porto-de-Corumba/"
+
+repository-artifact: "https://github.com/lapan-arq/Casario-do-Porto-de-Corumba"
+
+language: pt-BR
+
+preferred-citation:
+  type: software
+
+  title: "Casario do Porto de Corumbá"
+
+  authors:
+
+    - family-names: Cavassa
+      given-names: Jorciana Camila Batista
+
+    - family-names: Valentim
+      given-names: Odair Flores
+
+    - family-names: Arteaga
+      given-names: Lucas Junior
+
+    - family-names: Cavassa Neto
+      given-names: Ernani Estevão
+
+    - family-names: Ortiz dos Santos
+      given-names: Ramona Catarina
+
+  institution:
+    - name: Universidade Federal de Mato Grosso do Sul (UFMS)
+
+  year: 2026
+
+  version: "1.0.0"
+
+  url: "https://lapan-arq.github.io/Casario-do-Porto-de-Corumba/"
