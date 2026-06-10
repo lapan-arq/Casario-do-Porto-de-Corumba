@@ -160,6 +160,39 @@
 }
 
 /* ==================================================
+   REFERENCIAS
+================================================== */
+
+.references {
+    margin-top: 80px;
+    padding-top: 30px;
+    border-top: 1px solid #d6d6d6;
+}
+
+.references h3 {
+    color: #1F3473;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.references p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+    color: #5f6d82;
+    font-size: 0.95rem;
+}
+
+.references a {
+    color: #1F3473;
+    text-decoration: none;
+}
+
+.references a:hover {
+    text-decoration: underline;
+}
+
+/* ==================================================
    GALERIA
 ================================================== */
 
